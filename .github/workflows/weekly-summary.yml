@@ -1,0 +1,32 @@
+name: Weekly Job Summary
+
+on:
+  workflow_dispatch:        # allow manual run
+  schedule:
+    - cron: "30 12 * * 1"    # Monday 6 PM IST
+
+jobs:
+  weekly_summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run script
+        run: python weekly_summary.py
+
+      - name: Upload Excel result
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly_jobs
+          path: weekly_jobs.xlsx
