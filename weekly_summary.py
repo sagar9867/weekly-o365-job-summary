@@ -16,6 +16,11 @@ NAUKRI_URLS = [
         "https://www.naukri.com/m365-jobs?k=m365",
     "https://www.naukri.com/modern-workplace-jobs",
     "https://www.naukri.com/microsoft-admin-jobs",
+    "https://in.indeed.com/jobs?q=office+365&l=India",
+    "https://www.shine.com/job-search/office-365-jobs",
+    "https://www.foundit.in/search/office-365-jobs-in-mumbai",
+"https://www.foundit.in/search/office-365-jobs-in-pune",
+
 ]
 
 LINKEDIN_URL = "https://www.linkedin.com/jobs/search/?keywords=Office%20365&location=India"
