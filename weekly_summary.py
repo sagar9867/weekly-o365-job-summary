@@ -19,7 +19,7 @@ NAUKRI_URLS = [
     "https://www.naukri.com/exchange-jobs",
     "https://www.naukri.com/powerapps-jobs",
     "https://www.naukri.com/o365-jobs?k=o365",
-    "https://www.naukri.com/m365-jobs?k=m365"
+    "https://www.naukri.com/jobapi/v3/search?keyword=o365&location=India&pageNo=1&noOfResults=40"
 ]
 
 LINKEDIN_URL = "https://www.linkedin.com/jobs/search/?keywords=Office%20365&location=India"
